@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Nova</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css"
+        integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1>Nova</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home<br></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                                class="fa-solid fa-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                        class="fa-solid fa-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section dark-background">
+
+            <img src="images/hero-bg.jpg" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <h1 data-aos="fade-up">Focus On What Matters</h1>
+                        <blockquote data-aos="fade-up" data-aos-delay="100">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum
+                                laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima.
+                            </p>
+                        </blockquote>
+                        <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <a href="#about" class="btn-get-started">Get Started</a>
+                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                class="glightbox btn-watch-video d-flex align-items-center"><i
+                                    class="fa-regular fa-circle-play"></i><span>Watch Video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- Why Us Section -->
+        <section id="why-us" class="why-us section">
+
+            <div class="container">
+
+                <div class="row g-0">
+
+                    <div class="col-xl-5 img-bg" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/why-us-bg.jpg" alt="">
+                    </div>
+
+                    <div class="col-xl-7 slides position-relative" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="swiper init-swiper">
+                            <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "speed": 600,
+                                    "autoplay": {
+                                    "delay": 5000
+                                    },
+                                    "slidesPerView": "auto",
+                                    "centeredSlides": true,
+                                    "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                    },
+                                    "navigation": {
+                                    "nextEl": ".swiper-button-next",
+                                    "prevEl": ".swiper-button-prev"
+                                    }
+                                }
+                            </script>
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <h3 class="mb-3">Let's grow your business together</h3>
+                                        <h4 class="mb-3">Optio reiciendis accusantium iusto architecto at quia minima
+                                            maiores quidem, dolorum.</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsam
+                                            perferendis asperiores explicabo vel tempore velit totam, natus nesciunt
+                                            accusantium dicta quod quibusdam ipsum maiores nobis non, eum. Ullam
+                                            reiciendis dignissimos laborum aut, magni voluptatem velit doloribus quas
+                                            sapiente optio.</p>
+                                    </div>
+                                </div>
+                                <!-- End slide item -->
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <h3 class="mb-3">Unde perspiciatis ut repellat dolorem</h3>
+                                        <h4 class="mb-3">Amet cumque nam sed voluptas doloribus iusto. Dolorem eos
+                                            aliquam quis.</h4>
+                                        <p>Dolorem quia fuga consectetur voluptatem. Earum consequatur nulla maxime
+                                            necessitatibus cum accusamus. Voluptatem dolorem ut numquam dolorum delectus
+                                            autem veritatis facilis. Et ea ut repellat ea. Facere est dolores fugiat
+                                            dolor.</p>
+                                    </div>
+                                </div>
+                                <!-- End slide item -->
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <h3 class="mb-3">Aliquid non alias minus</h3>
+                                        <h4 class="mb-3">Necessitatibus voluptatibus explicabo dolores a vitae
+                                            voluptatum.</h4>
+                                        <p>Neque voluptates aut. Soluta aut perspiciatis porro deserunt. Voluptate ut
+                                            itaque velit. Aut consectetur voluptatem aspernatur sequi sit laborum.
+                                            Voluptas enim dolorum fugiat aut.</p>
+                                    </div>
+                                </div>
+                                <!-- End slide item -->
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <h3 class="mb-3">Necessitatibus suscipit non voluptatem quibusdam</h3>
+                                        <h4 class="mb-3">Tempora quos est ut quia adipisci ut voluptas. Deleniti laborum
+                                            soluta nihil est. Eum similique neque autem ut.</h4>
+                                        <p>Ut rerum et autem vel. Et rerum molestiae aut sit vel incidunt sit at
+                                            voluptatem. Saepe dolorem et sed voluptate impedit. Ad et qui sint at qui
+                                            animi animi rerum.</p>
+                                    </div>
+                                </div>
+                                <!-- End slide item -->
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End of Why Us Section -->
+
+        <!-- Service Section -->
+        <section id="services" class="services section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+            <!-- End of Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-briefcase" style="color: #f57813;"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Lorem Ipsum</h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi sint occaecati cupiditate non provident</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon flex-shrink-0"><i class="fa-regular fa-rectangle-list"
+                                style="color: #15a04a;"></i></div>
+                        <div>
+                            <h4 class="title">Dolor Sitema</h4>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat tarad limino ata</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-signal" style="color: #d90769;"></i></div>
+                        <div>
+                            <h4 class="title">Sed ut perspiciatis</h4>
+                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-binoculars" style="color: #15bfbc;"></i>
+                        </div>
+                        <div>
+                            <h4 class="title">Magni Dolores</h4>
+                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon flex-shrink-0"><i class="fa-regular fa-sun" style="color: #f5cf13;"></i></div>
+                        <div>
+                            <h4 class="title">Nemo Enim</h4>
+                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                    <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                        <div class="icon flex-shrink-0"><i class="fa-solid fa-calendar-days"
+                                style="color: #1335f5;"></i></div>
+                        <div>
+                            <h4 class="title">Eiusmod Tempor</h4>
+                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                                tempore, cum soluta nobis est eligendi</p>
+                            <a href="#" class="readmore stretched-link"><span>Learn More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End of Service Section -->
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section dark-background">
+
+            <img src="images/cta-bg.jpg" alt="">
+
+            <div class="container">
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-10">
+                        <div class="text-center">
+                            <h3>Call To Action</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="cta-btn">Call To Action</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End of Call To Action Section -->
+
+        <!-- Features Section -->
+        <section id="features" class="features section">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="mb-0">Powerful Features for</h3>
+                        <h3>Your Business</h3>
+
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-regular fa-eye" style="color: #ff8b2c;"></i>
+                                    <span>Easy Cart Features</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-solid fa-infinity" style="color: #5578ff;"></i>
+                                    <span>Sit amet consectetur adipisicing</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-solid fa-graduation-cap" style="color: #e80368;"></i>
+                                    <span>Ipsum Rerum Explicabo</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-regular fa-star" style="color: #ffa76e;"></i>
+                                    <span>Easy Cart Features</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-regular fa-gem" style="color: #11dbcf;"></i>
+                                    <span>Easy Cart Features</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-solid fa-video" style="color: #4233ff;"></i>
+                                    <span>Sit amet consectetur adipisicing</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-regular fa-sun" style="color: #29cc61;"></i>
+                                    <span>Ipsum Rerum Explicabo</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+
+                            <div class="col-md-6">
+                                <div class="icon-list d-flex">
+                                    <i class="fa-solid fa-chart-line" style="color: #ff5828;"></i>
+                                    <span>Easy Cart Features</span>
+                                </div>
+                            </div>
+                            <!-- End Icon List Item-->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
+                        <div class="phone-wrap">
+                            <img src="images/iphone.png" alt="Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <h4>Labore Sdio Lidui<br>Bonde Naruto</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum molestias
+                                doloremque quae delectus odit minima corrupti blanditiis quo animi!</p>
+                            <a href="#about" class="btn-get-started">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End of Features Section -->
+
+        <!-- Recent Posts Section -->
+        <section id="recent-posts" class="recent-posts section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Recent Blog Posts</h2>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-5">
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="post-box">
+                            <div class="post-img"><img src="images/blog-1.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, December 12</span>
+                                <span class="post-author"> / Julia Parker</span>
+                            </div>
+                            <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                            <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium.
+                                Asperiores eum ipsa est officiis. Modi qui magni est...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="post-box">
+                            <div class="post-img"><img src="images/blog-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Fri, September 05</span>
+                                <span class="post-author"> / Mario Douglas</span>
+                            </div>
+                            <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                            <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum
+                                assumenda. Quisquam omnis doloribus...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="post-box">
+                            <div class="post-img"><img src="images/blog-3.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, July 27</span>
+                                <span class="post-author"> / Lisa Hunter</span>
+                            </div>
+                            <h3 class="post-title">Quia assumenda est et veritati</h3>
+                            <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis
+                                repellat sed quae consectetur magnam...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="post-box">
+                            <div class="post-img"><img src="images/blog-4.jpg" class="img-fluid" alt=""></div>
+                            <div class="meta">
+                                <span class="post-date">Tue, Sep 16</span>
+                                <span class="post-author"> / Mario Douglas</span>
+                            </div>
+                            <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
+                            <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum
+                                earum quia eligendi...</p>
+                            <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span> <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End of Recent Posts Section -->
+
+    </main>
+
+    <footer id="footer" class="footer light-background">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-5 col-md-12 footer-about">
+                <a href="index.html" class="logo d-flex align-items-center">
+                  <span class="sitename">Nova</span>
+                </a>
+                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <div class="social-links d-flex mt-4">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-2 col-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Product Management</a></li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Graphic Design</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022</p>
+                <p>United States</p>
+                <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                <p><strong>Email:</strong> <span>info@example.com</span></p>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container copyright text-center">
+          <p>&copy; <span>Copyright</span> <strong class="px-1">Nova</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+            Designed by <a href="#">Amal</a>
+          </div>
+        </div>
+    
+      </footer>
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+        /* Apply .scrolled class to the body as the page is scrolled down */
+        function toggleScrolled() {
+            const selectBody = document.querySelector('body');
+            const selectHeader = document.querySelector('#header');
+            if (!selectHeader.classList.contains('fixed-top')) return;
+            window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+        }
+        document.addEventListener('scroll', toggleScrolled);
+        window.addEventListener('load', toggleScrolled);
+
+        /* Mobile nav toggle */
+        const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+        function mobileNavToogle() {
+            document.querySelector('body').classList.toggle('mobile-nav-active');
+            mobileNavToggleBtn.classList.toggle('fa-bars');
+            mobileNavToggleBtn.classList.toggle('fa-xmark');
+        }
+        mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+        /* Toggle mobile nav dropdowns */
+        document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+            navmenu.addEventListener('click', function (e) {
+                e.preventDefault();
+                this.parentNode.classList.toggle('active');
+                this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+                e.stopImmediatePropagation();
+            });
+        });
+
+        /* Animation on scroll function and init */
+        function aosInit() {
+            AOS.init({
+                duration: 600,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        }
+        window.addEventListener('load', aosInit);
+
+        /* Initiate glightbox */
+        document.addEventListener("DOMContentLoaded", function () {
+            const glightbox = GLightbox({
+                selector: '.glightbox'
+            });
+        });
+
+        /* Init swiper sliders */
+        function initSwiper() {
+            document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
+                let config = JSON.parse(
+                    swiperElement.querySelector(".swiper-config").innerHTML.trim()
+                );
+                if (swiperElement.classList.contains("swiper-tab")) {
+                    initSwiperWithCustomPagination(swiperElement, config);
+                } else {
+                    new Swiper(swiperElement, config);
+                }
+            });
+        }
+        window.addEventListener("load", initSwiper);
+
+        /* Scroll top button */
+        let scrollTop = document.querySelector('.scroll-top');
+        function toggleScrollTop() {
+            if (scrollTop) {
+                window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+            }
+        }
+        scrollTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        window.addEventListener('load', toggleScrollTop);
+        document.addEventListener('scroll', toggleScrollTop);
+
+    </script>
+
+    <!-- Bootstrap and JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+        integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
